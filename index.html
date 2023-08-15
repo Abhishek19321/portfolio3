@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0581479fa2.js" crossorigin="anonymous"></script> <!--font awesome website-->
+</head>
+<body>
+    <!------------------------------------------------------menu------------------------------------------------------->
+    <div id="header">
+    
+        <div class="container">
+            <nav>
+                 <img src="portfolio/logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home </a> </li>
+                    <li> <a href="#about">About </a> </li>
+                    <li> <a href="#services">Services </a> </li>
+                    <li> <a href="#portfolio">Portfolio </a> </li>
+                    <li> <a href="#contact">Contact </a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="work">Frontend Developer</p>
+                <h1>Hi,I'm <span>Abhishek</span></h1>
+                <h3 class="intro">passionate about creating interective applications and <br> experiences on web.</h3>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------about---------------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="myself-text"> Hi,there! I am a student of Electrical Engineering at NIT Silchar, 
+                        passionate about web development. Currently focused on frontend development, 
+                        with proficiency in HTML, CSS, JavaScript, and React. Eager to gain more experience and grow in the field.
+                        
+                        
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                  <div class="tab-contents active-tab" id="Skills">
+                    <ul> 
+                        <li><span>HTML <i class="fa-brands fa-html5"></i></span><br>Proficient in HTML5 and experienced in writing clean and sementically correct html code 
+                        and familiar with different tags and elements.</li>
+                        <li><span>CSS <i class="fa-brands fa-css3-alt"></i></span><br>Experienced in writing efficient CSS code and skilled at applying styles to HTML elements
+                        creating visually appealing web pages.</li>
+                        <li><span>JavaScript <i class="fa-brands fa-js"></i></span><br>Familiar with the programming language and skilled in implementing client-side
+                        interectivity and enhancing user experiences.</li>
+                        <li><span>Frameworks and Libraries <i class="fa-brands fa-react"></i></span><br> Familiar with REACT.</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+    
+                      <p> While not worked on client projects or professional assignments,I have dedicated significant amount of time
+                        to personal projects and developed a strong foundation in related skills. </p>
+                       
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul> 
+                        <li><span>2019</span><br>High Secondary from NPS International School</li>
+                        <li><span>2020-24</span><br>Pursuing B.Tech (Electrical Engineering) in NIT Silchar</li>    
+                    </ul>
+                  </div>
+                </div>
+               
+            </div>
+        </div>
+        
+        
+    </div>
+   <!----------------------------------------services--------------------------------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Well designed webpages like portfolio,e-commerce,travelling site etc.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Focuses on creating a seamless and meaningful user experience by 
+            understanding user needs, conducting research, and designing intuitive interfaces, 
+            while not compromising on the visual, interactive elements of a product to create 
+            aesthetically-pleasing interfaces.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2>Personal Projects</h2>
+                <p>Well built html,css,js,react based projects for school as well as collage students</p>
+                <a href="#"> Learn more</a>
+            </div>
+
+        </div>  
+    </div>
+   </div>
+   <!------------------------------------------------------portfolio-------------------------------------------------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="portfolio/work-1.jpg">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                <p>Unlimited movies, TV shows and more.
+                    Watch anywhere</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="portfolio/work-2.png">
+                <div class="layer">
+                    <h3>Spotify Clone</h3> 
+                <p>Listening is everything. Music for everyone. Listen to millions of songs.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="portfolio/work-3.png">
+                <div class="layer"><h3>E-Commerce Website</h3>
+                    <p>Everything you need at your fingertips.Your one-stop-shop.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+   </div>
+<!------------------------------------------contact--------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">
+                    Contact Me
+                </h1>
+                <p><i class="fas fa-paper-plane"></i>bhattacharyyaabhishek3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9975255076</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/abhishek.bhattacharyya.1426?mibextid=ZbWKwL">
+                        <i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/bhattacharyyaabhishek3?igshid=MzNlNGNkZWQ4Mg==">
+                        <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-bhattacharyya-5733b9238"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="portfolio/My-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © Abhishek. 
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <!---------------JavaScript------------------------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+    sidemeu.style.right="0";
+        }
+        function closemenu(){
+    sidemeu.style.right="-200px";
+        }
+    </script>
+    
+</body>
+</html>
